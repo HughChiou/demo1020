@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <input type="text">
+        <input type="email">
+        <input type="tel">
+        <input type="datetime">
+        <input type="datetime-local">
+        <input type="file">
+        <input type="checkbox">
+        <input type="radio">
+        <input type="range">
+        <input type="color">
+    </form>
+
+    <form>
+        <div><label for="cb">Checkbox</label><input name="checkbox" id="cb" type="checkbox"></div>
+        <div><label for="t">Text</label><input id="t" name="text" type="text"></div>
+
+        <fieldset>
+            <legend>Select a maintenance drone:</legend>
+
+            <div>
+                <input type="radio" id="huey" name="drone" value="huey" checked>
+                <label for="huey">Huey</label>
+            </div>
+
+            <div>
+                <input type="radio" id="dewey" name="drone" value="dewey">
+                <label for="dewey">Dewey</label>
+            </div>
+
+            <div>
+                <input type="radio" id="louie" name="drone" value="louie">
+                <label for="louie">Louie</label>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
