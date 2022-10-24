@@ -56,12 +56,32 @@
             margin: 10px;
             border: 5px solid red;
             background-color: blue;
-            box-sizing: border-box;
         }
 
         section.box-demo-wrapper {
             padding: 30px;
             background-color: yellow;
+        }
+
+        .box1 {
+            border: 3px solid red;
+            background-color: blue;
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+            height: 100px;
+            margin-bottom: 87px;
+        }
+
+        .box2 {
+            border: 3px solid red;
+            background-color: blue;
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+            height: 100px;
+            box-sizing: border-box;
+            margin-top: 13px;
         }
     </style>
 </head>
@@ -76,6 +96,7 @@
                 <li> <a href="forms.html">表單</a> </li>
                 <li> <a href="characters.html">特殊字元</a> </li>
                 <li> <a href="media.html">多媒體</a> </li>
+                <li> <a href="margin-collapsing.html">邊界重疊</a> </li>
             </ul>
         </nav>
     </header>
@@ -83,6 +104,8 @@
         <!-- 為什麼？ -->
         <section class="box-demo-wrapper">
             <div class="box-demo"></div>
+            <div class="box1"></div>
+            <div class="box2"></div>
         </section>
 
         <hr>

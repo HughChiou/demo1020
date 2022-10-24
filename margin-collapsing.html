@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>div {
+            border-bottom: 1px solid grey;
+        }
+
+        /* 第一個 */
+        body>div:first-child p:nth-child(1) {
+            margin-bottom: 13px;
+        }
+
+        body>div:first-child p:nth-child(2) {
+            margin-top: 87px;
+        }
+
+        /* 第二個 */
+        body>div:nth-child(2) section {
+            margin-top: 13px;
+            margin-bottom: 87px;
+        }
+
+        body>div:nth-child(2) header {
+            margin-top: 87px;
+        }
+
+        body>div:nth-child(2) footer {
+            margin-bottom: 13px;
+        }
+
+        /* 第三個 */
+        body>div:nth-child(3) p {
+            margin: 0px;
+        }
+
+        body>div:nth-child(3) div {
+            margin-top: 13px;
+            margin-bottom: 87px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>下邊界範圍會...</p>
+        <p>...跟這個元素的上邊界範圍重疊。</p>
+    </div>
+
+    <div>
+        <section>
+            <header>上邊界重疊是 87</header>
+            <footer>下邊界重疊還是 87 不能再高了</footer>
+        </section>
+    </div>
+
+    <div>
+        <p>下邊界範圍是 87</p>
+        <div></div>
+        <p>...上邊界範圍也是 87。</p>
+    </div>
+</body>
+
+</html>
