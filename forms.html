@@ -6,6 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <style>
+        input {
+            border: 1px solid green;
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        input[type="text"] {
+            color: blue;
+        }
+
+        label {
+            font-weight: bold;
+            color: green;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+        }
+
+        input[type="reset"] {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -90,7 +118,11 @@
             </p>
         </section>
 
-        <p> <button type="submit">Validate the payment</button> </p>
+        <p>
+            <!-- <button type="submit">Validate the payment</button> -->
+            <input type="submit" value="Validate the payment">
+            <input type="reset" value="Reset">
+        </p>
 
     </form>
 </body>
