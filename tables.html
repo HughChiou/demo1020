@@ -7,32 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
     <style>
-        table,
-        td {
-            border: 1px solid #333;
+        table {
+            border-collapse: collapse;
+            width: 50%;
         }
 
-        thead,
-        tfoot {
-            background-color: #333;
-            color: #fff;
+        td,
+        th {
+            border: 1px solid #ddd;
+            text-align: center;
+            width: 50%;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #d3d3d3;
         }
     </style>
 </head>
 
 <body>
     <table>
-        <thead>
-            <tr>
-                <th colspan="2">The table header</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>The table body</td>
-                <td>with two columns</td>
-            </tr>
-        </tbody>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Amy</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>19</td>
+        </tr>
     </table>
 </body>
 
