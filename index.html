@@ -125,6 +125,11 @@
                 console.log('box wrapper clicked', e);
             });
         }
+
+        function clickDiv(e) {
+            console.log('box1 clicked', e);
+            e.stopPropagation();
+        }
     </script>
 </head>
 
@@ -146,7 +151,7 @@
         <!-- 為什麼？ -->
         <section class="box-demo-wrapper">
             <div class="box-demo"></div>
-            <div class="box1"></div>
+            <div class="box1" onclick="clickDiv(event)"></div>
             <div class="box2"></div>
         </section>
 
