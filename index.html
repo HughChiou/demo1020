@@ -123,12 +123,12 @@
             const boxWrapper = document.querySelector('.box-demo-wrapper');
             boxWrapper.addEventListener('click', function (e) {
                 console.log('box wrapper clicked', e);
-            });
+            }, true);
         }
 
         function clickDiv(e) {
             console.log('box1 clicked', e);
-            e.stopPropagation();
+            // e.stopPropagation();
         }
     </script>
 </head>
