@@ -110,6 +110,17 @@
             display: inline;
         }
     </style>
+    <script>
+        window.onload = function () {
+            console.log('window loaded');
+
+            const box = document.querySelector('.box-demo');
+
+            box.addEventListener('click', function (e) {
+                console.log('box clicked', e);
+            });
+        }
+    </script>
 </head>
 
 <body>
